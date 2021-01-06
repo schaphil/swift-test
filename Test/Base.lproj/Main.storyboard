@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,68 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="airplane" translatesAutoresizingMaskIntoConstraints="NO" id="KVl-TR-wvC">
+                                <rect key="frame" x="140" y="615" width="110" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="DeQ-ks-pJn"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="U2m-I8-mim">
+                                <rect key="frame" x="14" y="750" width="362" height="31"/>
+                                <connections>
+                                    <action selector="moveSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="dm6-OX-cTV"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dauer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2MG-OT-vtj">
+                                <rect key="frame" x="25" y="134" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIG-Q6-Xep">
+                                <rect key="frame" x="25.000000000000007" y="165" width="86.666666666666686" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="Ea5-zx-BBw">
+                                <rect key="frame" x="48" y="28" width="98" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U2m-I8-mim" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6IU-Wq-TRj"/>
+                            <constraint firstItem="BIG-Q6-Xep" firstAttribute="top" secondItem="2MG-OT-vtj" secondAttribute="bottom" constant="10" id="Awu-we-Feo"/>
+                            <constraint firstItem="U2m-I8-mim" firstAttribute="top" secondItem="KVl-TR-wvC" secondAttribute="bottom" constant="22" id="BfJ-2a-IQZ"/>
+                            <constraint firstItem="2MG-OT-vtj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="NPN-5T-OfZ"/>
+                            <constraint firstItem="BIG-Q6-Xep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="YfQ-Z9-7GF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U2m-I8-mim" secondAttribute="bottom" constant="30" id="b8d-hi-5FB"/>
+                            <constraint firstItem="2MG-OT-vtj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="eaS-8T-XUc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U2m-I8-mim" secondAttribute="trailing" constant="16" id="lFZ-IL-bo5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Label2" destination="BIG-Q6-Xep" id="zXV-aa-6nY"/>
+                        <outlet property="airplane" destination="KVl-TR-wvC" id="byG-dS-LnF"/>
+                        <outlet property="cloud1" destination="Ea5-zx-BBw" id="4ya-J5-otR"/>
+                        <outlet property="label1" destination="2MG-OT-vtj" id="jDx-C3-YL4"/>
+                        <outlet property="slider" destination="U2m-I8-mim" id="Uoc-kb-nM3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135.38461538461539" y="93.127962085308056"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="airplane" width="256" height="256"/>
+        <image name="clouds" width="256" height="256"/>
+    </resources>
 </document>

@@ -15,6 +15,7 @@
 		17203F412598935900F4F3A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17203F3F2598935900F4F3A5 /* LaunchScreen.storyboard */; };
 		17203F4C2598935A00F4F3A5 /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17203F4B2598935A00F4F3A5 /* TestTests.swift */; };
 		17203F572598935A00F4F3A5 /* TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17203F562598935A00F4F3A5 /* TestUITests.swift */; };
+		1732323325A64B9400466A0C /* airplane.png in Resources */ = {isa = PBXBuildFile; fileRef = 1732323225A64B9400466A0C /* airplane.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		17203F522598935A00F4F3A5 /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17203F562598935A00F4F3A5 /* TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUITests.swift; sourceTree = "<group>"; };
 		17203F582598935A00F4F3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1732323225A64B9400466A0C /* airplane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplane.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				17203F362598935800F4F3A5 /* SceneDelegate.swift */,
 				17203F382598935800F4F3A5 /* ViewController.swift */,
 				17203F3A2598935800F4F3A5 /* Main.storyboard */,
+				1732323225A64B9400466A0C /* airplane.png */,
 				17203F3D2598935900F4F3A5 /* Assets.xcassets */,
 				17203F3F2598935900F4F3A5 /* LaunchScreen.storyboard */,
 				17203F422598935900F4F3A5 /* Info.plist */,
@@ -234,6 +237,7 @@
 				17203F412598935900F4F3A5 /* LaunchScreen.storyboard in Resources */,
 				17203F3E2598935900F4F3A5 /* Assets.xcassets in Resources */,
 				17203F3C2598935800F4F3A5 /* Main.storyboard in Resources */,
+				1732323325A64B9400466A0C /* airplane.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
